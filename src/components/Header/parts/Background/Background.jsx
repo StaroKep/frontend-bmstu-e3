@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import cn from 'classnames/bind';
 
-import { Spinner } from 'src/icons';
-
 import headerGif from './assets/header.gif';
-import headerJpg from './assets/header.jpg';
+import headerJpg from './assets/header.png';
 
 import * as styles from './Background.scss';
 
