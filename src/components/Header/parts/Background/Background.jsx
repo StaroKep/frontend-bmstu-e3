@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import cn from 'classnames/bind';
 
 import headerGif from './assets/header.gif';
-import headerJpg from './assets/header.png';
+import headerPng from './assets/header.png';
 
 import * as styles from './Background.scss';
 
@@ -29,7 +29,7 @@ class Background extends Component {
         const { loading } = this.state;
 
         const temporaryBackgroundStyles = {
-            backgroundImage: `url(${headerJpg})`,
+            backgroundImage: `url(${headerPng})`,
         };
 
         const styles = {
@@ -42,7 +42,7 @@ class Background extends Component {
                 <div className={cx('root')} style={styles} />
                 {loading && (
                     <div
-                        className={cx('root')}
+                        className={cx('root', 'root_temp')}
                         style={temporaryBackgroundStyles}
                     />
                 )}
