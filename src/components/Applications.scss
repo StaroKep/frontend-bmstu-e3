@@ -1,0 +1,9 @@
+@import "../constants/main.scss";
+
+.root {
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+    height: fit-content;
+    position: absolute;
+}
