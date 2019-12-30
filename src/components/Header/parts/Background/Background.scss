@@ -24,11 +24,7 @@
     }
 
     &_temp {
-        width: calc(100% + 50px);
-        height: calc(100% + 50px);
-        filter: blur(10px);
+        filter: blur(6px);
         background-color: var(--main-fill-color);
-        top: -25px;
-        left: -25px;
     }
 }
