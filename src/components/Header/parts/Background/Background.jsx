@@ -43,13 +43,10 @@ class Background extends Component {
             <>
                 <div className={cx('root')} style={styles} />
                 {loading && (
-                    <>
-                        <div
-                            className={cx('root')}
-                            style={temporaryBackgroundStyles}
-                        />
-                        <Spinner />
-                    </>
+                    <div
+                        className={cx('root')}
+                        style={temporaryBackgroundStyles}
+                    />
                 )}
             </>
         );
