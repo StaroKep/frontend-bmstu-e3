@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import cn from 'classnames/bind';
 
+import { Spinner } from 'src/icons';
+
 import headerGif from './assets/header.gif';
 import headerJpg from './assets/header.jpg';
 
@@ -41,10 +43,13 @@ class Background extends Component {
             <>
                 <div className={cx('root')} style={styles} />
                 {loading && (
-                    <div
-                        className={cx('root')}
-                        style={temporaryBackgroundStyles}
-                    />
+                    <>
+                        <div
+                            className={cx('root')}
+                            style={temporaryBackgroundStyles}
+                        />
+                        <Spinner />
+                    </>
                 )}
             </>
         );
