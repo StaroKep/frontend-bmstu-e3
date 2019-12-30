@@ -15,11 +15,13 @@ class Header extends Component {
             loading: true,
         };
 
-        window.onload = () => {
+        const gif = new Image();
+        gif.onload = () => {
             this.setState({
                 loading: false,
-            });
+            })
         };
+        gif.src = headerGif;
     }
 
     render() {
