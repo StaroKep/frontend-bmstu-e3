@@ -1,11 +1,11 @@
 {
   "name": "bmstu-e3.ru",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "scripts": {
     "start": "webpack-dev-server --hot --mode development --watch",
     "build": "webpack --mode production",
-    "prettier:fix": "prettier --write \"src/**/*.js\" && prettier --write \"src/**/*.css\""
+    "prettier:fix": "prettier --write \"src/**/*.jsx\" && prettier --write \"src/**/*.scss\""
   },
   "repository": {
     "type": "git",
