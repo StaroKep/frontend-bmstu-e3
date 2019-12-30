@@ -39,7 +39,7 @@ class Background extends Component {
         /** It's important to save order of div's */
         return (
             <>
-                <div className={cx('root')} style={styles} />
+                {!loading && <div className={cx('root')} style={styles} />}
                 {loading && (
                     <div
                         className={cx('root', 'root_temp')}
