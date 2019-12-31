@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import cn from 'classnames/bind';
 
-import Header from './Header/Header';
+import { Header } from 'src/components/Header';
+import { About } from 'src/components/About';
+import { Enrollee } from 'src/components/Enrollee';
 
 import * as styles from './Applications.scss';
 
@@ -12,6 +14,8 @@ class Application extends Component {
         return (
             <div className={cx('root')}>
                 <Header />
+                <About />
+                <Enrollee />
             </div>
         );
     }

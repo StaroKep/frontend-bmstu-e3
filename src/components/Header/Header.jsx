@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import cn from 'classnames/bind';
 
+import { Anchor } from 'src/components/AnchorTarget';
+import links from 'src/constants/links';
+
 import { Background } from './parts/Background';
 import { Menu } from './parts/Menu';
 
@@ -18,13 +21,27 @@ class Header extends Component {
 
         return (
             <div className={cx('root')}>
+                <Anchor name="start" />
                 <Background />
                 <Menu />
 
                 <div className={cx('content')}>
-                    <a className={cx('bmstu-logo')} href="#" style={logoStyles} />
-                    <a className={cx('link')} href="#">Энергомашиностроение</a>
-                    <a className={cx('link')} href="#">Газотурбинные и нетрадиционные энергоустановки</a>
+                    <a
+                        className={cx('bmstu-logo')}
+                        href={links.bmstu}
+                        style={logoStyles}
+                        target="_blank"
+                    />
+                    <a
+                        className={cx('link')}
+                        href={links.energo}
+                        target="_blank"
+                    >
+                        Энергомашиностроение
+                    </a>
+                    <a className={cx('link')} href="#">
+                        Газотурбинные и нетрадиционные энергоустановки
+                    </a>
                 </div>
             </div>
         );
