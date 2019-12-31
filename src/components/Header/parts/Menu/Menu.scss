@@ -1,0 +1,33 @@
+:root {
+    --menu-height: 60px;
+}
+
+.root {
+    width: 100%;
+    height: var(--menu-height);
+    background-color: rgba(40, 40, 40, 0.5);
+    border-bottom: 1px solid rgba(80, 99, 127, 0.05);
+    position: fixed;
+    backdrop-filter: saturate(180%) blur(6px);
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.align {
+    width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.link {
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+    line-height: var(--menu-height);
+    padding: 0 30px;
+    white-space: nowrap;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    font-size: 18px;
+}
