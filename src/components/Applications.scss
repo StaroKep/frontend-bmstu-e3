@@ -1,9 +1,17 @@
 @import '../constants/main.scss';
 
 .root {
+    max-width: 1920px;
     overflow: hidden;
     width: 100%;
     min-height: 100%;
     height: fit-content;
     position: absolute;
+    margin: auto;
+}
+
+@media (min-width: 1920px) {
+    .root {
+        position: relative;
+    }
 }

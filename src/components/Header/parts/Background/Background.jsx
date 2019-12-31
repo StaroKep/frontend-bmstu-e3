@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import cn from 'classnames/bind';
 
 import headerGif from './assets/header.gif';
-import headerPng from './assets/header.png';
+import headerJpg from './assets/header.jpg';
 
 import * as styles from './Background.scss';
 
@@ -29,7 +29,7 @@ class Background extends Component {
         const { loading } = this.state;
 
         const temporaryBackgroundStyles = {
-            backgroundImage: `url(${headerPng})`,
+            backgroundImage: `url(${headerJpg})`,
         };
 
         const styles = {
