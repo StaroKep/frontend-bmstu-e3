@@ -58,7 +58,7 @@ class Presentation extends Component {
                 <iframe
                     style={iframeStyles}
                     className={cx('iframe')}
-                    src="https://www.youtube.com/embed/eXa02g4jp-s?controls=0&autoplay=1&loop=1&mute=1"
+                    src="https://www.youtube.com/embed/eXa02g4jp-s?controls=0&autoplay=1&loop=1&mute=1&playlist=eXa02g4jp-s"
                     frameBorder="0"
                     allow="accelerometer; autoplay; loop; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

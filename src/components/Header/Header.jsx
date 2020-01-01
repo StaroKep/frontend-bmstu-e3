@@ -3,8 +3,8 @@ import cn from 'classnames/bind';
 
 import { Anchor } from 'src/components/AnchorTarget';
 import links from 'src/constants/links';
+import { Background } from 'src/components/Background';
 
-import { Background } from './parts/Background';
 import { Menu } from './parts/Menu';
 
 import bmstuLogo from './assets/bmstu-logo.png';

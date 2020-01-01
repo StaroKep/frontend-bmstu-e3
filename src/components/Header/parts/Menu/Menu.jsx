@@ -24,14 +24,14 @@ class Menu extends Component {
                     <a className={linkClassName} href={`#${anchor.enrollee}`}>
                         Абитуриентам
                     </a>
-                    <a className={linkClassName} href="#">
+                    <a className={linkClassName} href={`#${anchor.news}`}>
                         Новости
                     </a>
                     <a className={linkClassName} href="#">
-                        Расписание
-                    </a>
-                    <a className={linkClassName} href="#">
                         Преподаватели
+                    </a>
+                    <a className={linkClassName} href={`#${anchor.schedule}`}>
+                        Расписание
                     </a>
                     <a
                         className={linkClassName}

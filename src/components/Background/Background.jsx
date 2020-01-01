@@ -15,25 +15,30 @@ class Background extends Component {
         this.state = {
             loading: true,
         };
+    }
 
-        const gif = new Image();
-        gif.onload = () => {
+    componentWillMount() {
+        const { gif } = this.props;
+
+        const draftGif = new Image();
+        draftGif.onload = () => {
             this.setState({
                 loading: false,
             });
         };
-        gif.src = headerGif;
+        draftGif.src = gif || headerGif;
     }
 
     render() {
         const { loading } = this.state;
+        const { gif, jpg } = this.props;
 
         const temporaryBackgroundStyles = {
-            backgroundImage: `url(${headerJpg})`,
+            backgroundImage: `url(${jpg || headerJpg})`,
         };
 
         const styles = {
-            backgroundImage: `url(${headerGif})`,
+            backgroundImage: `url(${gif || headerGif})`,
         };
 
         /** It's important to save order of div's */
