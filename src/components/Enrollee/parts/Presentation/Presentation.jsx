@@ -35,6 +35,7 @@ class Presentation extends Component {
 
     render() {
         const { rootWidth, rootHeight, iframeWidth, iframeHeight } = this.state;
+        const { videoURL } = this.props;
 
         const rootStyles = {
             width: `${rootWidth}px`,
@@ -46,19 +47,19 @@ class Presentation extends Component {
             minHeight: `${iframeHeight}px`,
         };
 
-        console.log(rootStyles, iframeStyles);
+        const resultVideoURL = videoURL || 'eXa02g4jp-s';
 
         return (
             <div className={cx('root')} style={rootStyles}>
                 <a
                     className={cx('watchLink')}
                     target="_blank"
-                    href="https://www.youtube.com/embed/eXa02g4jp-s"
+                    href={`https://www.youtube.com/embed/${resultVideoURL}`}
                 />
                 <iframe
                     style={iframeStyles}
                     className={cx('iframe')}
-                    src="https://www.youtube.com/embed/eXa02g4jp-s?controls=0&autoplay=1&loop=1&mute=1&playlist=eXa02g4jp-s"
+                    src={`https://www.youtube.com/embed/${resultVideoURL}?controls=0&autoplay=1&loop=1&mute=1&playlist=${resultVideoURL}`}
                     frameBorder="0"
                     allow="accelerometer; autoplay; loop; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

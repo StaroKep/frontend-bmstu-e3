@@ -4,7 +4,7 @@ import cn from 'classnames/bind';
 import { Header } from 'src/components/Header';
 import { About } from 'src/components/About';
 import { Enrollee } from 'src/components/Enrollee';
-import {News} from "src/components/News";
+import { News } from 'src/components/News';
 import { Schedule } from 'src/components/Schedule';
 import { Footer } from 'src/components/Footer';
 
@@ -19,7 +19,7 @@ class Application extends Component {
                 <Header />
                 <About />
                 <Enrollee />
-                <News/>
+                <News />
                 <Schedule />
                 <Footer />
             </div>

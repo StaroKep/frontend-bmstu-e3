@@ -31,14 +31,16 @@ class Background extends Component {
 
     render() {
         const { loading } = this.state;
-        const { gif, jpg } = this.props;
+        const { gif, jpg, position } = this.props;
 
         const temporaryBackgroundStyles = {
             backgroundImage: `url(${jpg || headerJpg})`,
+            backgroundPosition: position,
         };
 
         const styles = {
             backgroundImage: `url(${gif || headerGif})`,
+            backgroundPosition: position,
         };
 
         /** It's important to save order of div's */

@@ -4,10 +4,9 @@ import cn from 'classnames/bind';
 import { Anchor } from 'src/components/AnchorTarget';
 import links from 'src/constants/links';
 import { Background } from 'src/components/Background';
+import bmstuLogo from 'src/assets/images/bmstu-logo.png';
 
 import { Menu } from './parts/Menu';
-
-import bmstuLogo from './assets/bmstu-logo.png';
 
 import * as styles from './Header.scss';
 
