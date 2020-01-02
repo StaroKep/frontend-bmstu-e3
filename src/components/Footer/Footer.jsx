@@ -47,28 +47,35 @@ class Footer extends Component {
                     <div className={cx('right-column')}>
                         <div className={cx('title')}>Контакты</div>
                         <table>
-                            <tr>
-                                <td>
-                                    <a
-                                        target="_blank"
-                                        href="https://yandex.ru/maps/-/C6E-r8Yo"
-                                    >
-                                        Адрес:
-                                    </a>
-                                </td>
-                                <td>
-                                    105005, г. Москва, 2-я Бауманская ул. д.5
-                                    стр.1, МГТУ им. Н.Э.Баумана, кафедра Э3
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Телефон:</td>
-                                <td>+7 (499) 265-78-42</td>
-                            </tr>
-                            <tr>
-                                <td>Email:</td>
-                                <td>e3@bmstu.com</td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a
+                                            target="_blank"
+                                            href="https://yandex.ru/maps/-/C6E-r8Yo"
+                                        >
+                                            Адрес:
+                                        </a>
+                                    </td>
+                                    <td>
+                                        105005, г. Москва, 2-я Бауманская ул.
+                                        д.5 стр.1, МГТУ им. Н.Э.Баумана, кафедра
+                                        Э3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Телефон:</td>
+                                    <td>+7 (499) 265-78-42</td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>e3@bmstu.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Автор:</td>
+                                    <td>Еремин К. Э.</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
