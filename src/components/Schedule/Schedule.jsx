@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import cn from 'classnames/bind';
+import IframeResizer from "iframe-resizer-react";
 
 import { Anchor } from 'src/components/AnchorTarget';
 import anchor from 'src/constants/anchor';
@@ -15,10 +16,9 @@ class Schedule extends Component {
             <div className={cx('root')}>
                 <Anchor name={anchor.schedule} />
                 <Title>Расписание</Title>
-                <iframe
-                    className={cx('schedule')}
+                <IframeResizer
                     src="https://students.bmstu.ru/schedule/list"
-                    frameBorder="0"
+                    style={{ width: '1px', minWidth: '100%'}}
                 />
             </div>
         );
