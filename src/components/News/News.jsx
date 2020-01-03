@@ -6,7 +6,7 @@ import anchor from 'src/constants/anchor';
 
 import * as styles from './News.scss';
 import { Title } from 'src/components/Title';
-import {Presentation} from "src/components/Enrollee/parts/Presentation";
+import { Presentation } from 'src/components/Enrollee/parts/Presentation';
 
 const cx = cn.bind(styles);
 
@@ -16,26 +16,12 @@ class News extends Component {
             <div className={cx('root')}>
                 <Anchor name={anchor.news} />
 
-                <Title>Новости</Title>
-                <div className={cx('news')}>
-                    <a
-                        className="twitter-timeline"
-                        href="https://twitter.com/StaroKep?ref_src=twsrc%5Etfw"
-                    >
-                       Новости
-                    </a>
-                </div>
+                <Title>Новости (скоро)</Title>
 
                 <Presentation videoURL="I1bsDYmpXXI" />
             </div>
         );
     }
 }
-
-//<iframe
-//                     className={cx('schedule')}
-//                     src="https://twitter.com/umputun"
-//                     frameBorder="0"
-//                 />
 
 export default News;
