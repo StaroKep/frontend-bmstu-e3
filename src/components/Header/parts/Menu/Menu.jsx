@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Media from 'react-media';
 import cn from 'classnames/bind';
 
 import anchor from 'src/constants/anchor';
@@ -14,6 +15,7 @@ class Menu extends Component {
 
         return (
             <div className={cx('root')}>
+
                 <div className={cx('align')}>
                     <a className={linkClassName} href={`#${anchor.start}`}>
                         Главная
@@ -24,15 +26,43 @@ class Menu extends Component {
                     <a className={linkClassName} href={`#${anchor.enrollee}`}>
                         Абитуриентам
                     </a>
-                    <a className={linkClassName} href={`#${anchor.news}`}>
-                        Новости
-                    </a>
+
+                    {/* Новости */}
+                    <Media query="(max-width: 980px)" render={() =>
+                        (
+                            <a className={linkClassName} href={links.news} target="_blank">
+                                Новости
+                            </a>
+                        )}
+                    />
+                    <Media query="(min-width: 981px)" render={() =>
+                        (
+                            <a className={linkClassName} href={`#${anchor.news}`}>
+                                Новости
+                            </a>
+                        )}
+                    />
+
                     {/*<a className={linkClassName} href="#">*/}
                     {/*    Преподаватели*/}
                     {/*</a>*/}
-                    <a className={linkClassName} href={`#${anchor.schedule}`}>
-                        Расписание
-                    </a>
+
+                    {/* Расписание */}
+                    <Media query="(max-width: 980px)" render={() =>
+                        (
+                            <a className={linkClassName} href={links.schedule} target="_blank">
+                                Расписание
+                            </a>
+                        )}
+                    />
+                    <Media query="(min-width: 981px)" render={() =>
+                        (
+                            <a className={linkClassName} href={`#${anchor.schedule}`}>
+                                Расписание
+                            </a>
+                        )}
+                    />
+
                     <a
                         className={linkClassName}
                         href={links.energo}
