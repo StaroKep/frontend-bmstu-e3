@@ -27,9 +27,9 @@ class Menu extends Component {
                     <a className={linkClassName} href={`#${anchor.news}`}>
                         Новости
                     </a>
-                    <a className={linkClassName} href="#">
-                        Преподаватели
-                    </a>
+                    {/*<a className={linkClassName} href="#">*/}
+                    {/*    Преподаватели*/}
+                    {/*</a>*/}
                     <a className={linkClassName} href={`#${anchor.schedule}`}>
                         Расписание
                     </a>

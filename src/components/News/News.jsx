@@ -5,7 +5,6 @@ import { Anchor } from 'src/components/AnchorTarget';
 import anchor from 'src/constants/anchor';
 
 import * as styles from './News.scss';
-import { Title } from 'src/components/Title';
 import { Presentation } from 'src/components/Enrollee/parts/Presentation';
 
 const cx = cn.bind(styles);
@@ -16,7 +15,11 @@ class News extends Component {
             <div className={cx('root')}>
                 <Anchor name={anchor.news} />
 
-                <Title>Новости (скоро)</Title>
+                <iframe
+                    className={cx('news')}
+                    src="https://medium.com/@e3.bmstu"
+                    frameBorder="0"
+                />
 
                 <Presentation videoURL="I1bsDYmpXXI" />
             </div>
