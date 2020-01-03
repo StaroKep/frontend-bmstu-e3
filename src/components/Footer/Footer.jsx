@@ -4,8 +4,8 @@ import cn from 'classnames/bind';
 import { Background } from 'src/components/Background';
 import bmstuLogo from 'src/assets/images/bmstu-logo.png';
 
-import footerJPG from './assets/footer.jpg';
-import footerGIF from './assets/footer.gif';
+import footerJPG from 'src/assets/images/footer.jpg';
+import footerGIF from 'src/assets/images/footer.gif';
 
 import * as styles from './Footer.scss';
 

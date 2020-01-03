@@ -16,8 +16,6 @@ class Enrollee extends Component {
     render() {
         return (
             <div className={cx('root')}>
-                <Presentation />
-
                 <div className={cx('title')}>
                     <Anchor name={anchor.enrollee} />
                     <Title>Абитуриенту</Title>

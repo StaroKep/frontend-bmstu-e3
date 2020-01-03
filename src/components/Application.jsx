@@ -7,21 +7,83 @@ import { Enrollee } from 'src/components/Enrollee';
 import { News } from 'src/components/News';
 import { Schedule } from 'src/components/Schedule';
 import { Footer } from 'src/components/Footer';
+import { CloseButton } from 'src/components/CloseButton';
+import anchor from 'src/constants/anchor';
+
+import footerJPG from 'src/assets/images/footer.jpg';
+import footerGIF from 'src/assets/images/footer.gif';
 
 import * as styles from './Applications.scss';
+import { Background } from 'src/components/Background';
 
 const cx = cn.bind(styles);
 
 class Application extends Component {
+    constructor() {
+        super();
+
+        this.state = {
+            hash: window.location.hash,
+        };
+
+        this.setHash = this.setHash.bind(this);
+
+        window.onhashchange = this.setHash;
+    }
+
+    setHash() {
+        const hash = window.location.hash;
+
+        this.setState({
+            hash,
+        });
+    }
+
     render() {
+        const { hash } = this.state;
+
+        let content = null;
+        let fullScreen = false;
+
+        const fullScreenBackgroundProps = {
+            jpg: footerJPG,
+            gif: footerGIF,
+            position: 'center',
+        };
+
+        switch (hash) {
+            case `#${anchor.news}`:
+                content = <News />;
+                fullScreen = true;
+                break;
+            case `#${anchor.schedule}`:
+                content = <Schedule />;
+                fullScreen = true;
+                break;
+            default:
+                content = (
+                    <>
+                        <Header />
+                        <About />
+                        <Enrollee />
+                        <Footer />
+                    </>
+                );
+        }
+
+        const applicationClassNames = cx('root', {
+            'full-screen': fullScreen,
+        });
+
         return (
-            <div className={cx('root')}>
-                <Header />
-                <About />
-                <Enrollee />
-                <News />
-                <Schedule />
-                <Footer />
+            <div className={applicationClassNames}>
+                {fullScreen && (
+                    <>
+                        <CloseButton />
+                        <Background {...fullScreenBackgroundProps} />
+                    </>
+                )}
+                {content}
             </div>
         );
     }

@@ -20,14 +20,15 @@ class Menu extends Component {
                     <a className={linkClassName} href={`#${anchor.start}`}>
                         Главная
                     </a>
+
                     <a className={linkClassName} href={`#${anchor.about}`}>
                         О кафедре
                     </a>
+
                     <a className={linkClassName} href={`#${anchor.enrollee}`}>
                         Абитуриентам
                     </a>
 
-                    {/* Новости */}
                     <Media query="(max-width: 980px)" render={() =>
                         (
                             <a className={linkClassName} href={links.news} target="_blank">
