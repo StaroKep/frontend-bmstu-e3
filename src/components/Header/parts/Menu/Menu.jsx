@@ -29,6 +29,10 @@ class Menu extends Component {
                         Абитуриентам
                     </a>
 
+                    <a className={linkClassName} href={`#${anchor.tutors}`}>
+                        Преподаватели
+                    </a>
+
                     <Media query="(max-width: 980px)" render={() =>
                         (
                             <a className={linkClassName} href={links.news} target="_blank">
@@ -44,11 +48,6 @@ class Menu extends Component {
                         )}
                     />
 
-                    {/*<a className={linkClassName} href="#">*/}
-                    {/*    Преподаватели*/}
-                    {/*</a>*/}
-
-                    {/* Расписание */}
                     <Media query="(max-width: 980px)" render={() =>
                         (
                             <a className={linkClassName} href={links.schedule} target="_blank">

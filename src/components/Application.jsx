@@ -15,6 +15,7 @@ import footerGIF from 'src/assets/images/footer.gif';
 
 import * as styles from './Applications.scss';
 import { Background } from 'src/components/Background';
+import {Tutors} from "src/components/Tutors";
 
 const cx = cn.bind(styles);
 
@@ -66,6 +67,7 @@ class Application extends Component {
                         <Header />
                         <About />
                         <Enrollee />
+                        <Tutors/>
                         <Footer />
                     </>
                 );

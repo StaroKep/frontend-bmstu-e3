@@ -4,4 +4,5 @@ export default {
     enrollee: "enrollee",
     schedule: "schedule",
     news: "news",
+    tutors: "tutors",
 }

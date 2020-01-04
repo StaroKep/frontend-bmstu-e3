@@ -1,0 +1,13 @@
+.root {
+    position: relative;
+}
+
+.tutors-list {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 860px;
+}

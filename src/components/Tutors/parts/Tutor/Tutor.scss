@@ -1,0 +1,30 @@
+.root {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &:hover {
+        transform: scale(1.15);
+    }
+}
+
+.photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.name {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
