@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import cn from 'classnames/bind';
 
-import links from "src/constants/links";
+import links from 'src/constants/links';
 
 import * as styles from './Schedule.scss';
 

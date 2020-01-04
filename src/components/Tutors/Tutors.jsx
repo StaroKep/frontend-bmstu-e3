@@ -6,7 +6,7 @@ import anchor from 'src/constants/anchor';
 import { Title } from 'src/components/Title';
 import { Tutor } from './parts/Tutor';
 import { tutors } from './data';
-import {Presentation} from "src/components/Enrollee/parts/Presentation";
+import { Presentation } from 'src/components/Enrollee/parts/Presentation';
 
 import * as styles from './Tutors.scss';
 

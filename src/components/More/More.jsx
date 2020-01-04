@@ -4,7 +4,7 @@ import cn from 'classnames/bind';
 import { Anchor } from 'src/components/AnchorTarget';
 import anchor from 'src/constants/anchor';
 import links from 'src/constants/links';
-import {Title} from "src/components/Title";
+import { Title } from 'src/components/Title';
 
 import * as styles from './More.scss';
 

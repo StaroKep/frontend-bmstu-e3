@@ -15,7 +15,6 @@ class Menu extends Component {
 
         return (
             <div className={cx('root')}>
-
                 <div className={cx('align')}>
                     <a className={linkClassName} href={`#${anchor.start}`}>
                         Главная
@@ -33,31 +32,49 @@ class Menu extends Component {
                         Преподаватели
                     </a>
 
-                    <Media query="(max-width: 980px)" render={() =>
-                        (
-                            <a className={linkClassName} href={links.news} target="_blank">
+                    <Media
+                        query="(max-width: 980px)"
+                        render={() => (
+                            <a
+                                className={linkClassName}
+                                href={links.news}
+                                target="_blank"
+                            >
                                 Новости
                             </a>
                         )}
                     />
-                    <Media query="(min-width: 981px)" render={() =>
-                        (
-                            <a className={linkClassName} href={`#${anchor.news}`}>
+                    <Media
+                        query="(min-width: 981px)"
+                        render={() => (
+                            <a
+                                className={linkClassName}
+                                href={`#${anchor.news}`}
+                            >
                                 Новости
                             </a>
                         )}
                     />
 
-                    <Media query="(max-width: 980px)" render={() =>
-                        (
-                            <a className={linkClassName} href={links.schedule} target="_blank">
+                    <Media
+                        query="(max-width: 980px)"
+                        render={() => (
+                            <a
+                                className={linkClassName}
+                                href={links.schedule}
+                                target="_blank"
+                            >
                                 Расписание
                             </a>
                         )}
                     />
-                    <Media query="(min-width: 981px)" render={() =>
-                        (
-                            <a className={linkClassName} href={`#${anchor.schedule}`}>
+                    <Media
+                        query="(min-width: 981px)"
+                        render={() => (
+                            <a
+                                className={linkClassName}
+                                href={`#${anchor.schedule}`}
+                            >
                                 Расписание
                             </a>
                         )}

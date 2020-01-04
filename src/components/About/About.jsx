@@ -7,7 +7,7 @@ import anchor from 'src/constants/anchor';
 
 import * as styles from './About.scss';
 import { Title } from 'src/components/Title';
-import {Presentation} from "src/components/Enrollee/parts/Presentation";
+import { Presentation } from 'src/components/Enrollee/parts/Presentation';
 
 const cx = cn.bind(styles);
 
