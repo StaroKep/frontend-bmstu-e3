@@ -16,7 +16,6 @@ class News extends Component {
                     src={links.news}
                     frameBorder="0"
                 />
-                {/*<Presentation videoURL="I1bsDYmpXXI" />*/}
             </div>
         );
     }

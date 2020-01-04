@@ -8,14 +8,15 @@ import { News } from 'src/components/News';
 import { Schedule } from 'src/components/Schedule';
 import { Footer } from 'src/components/Footer';
 import { CloseButton } from 'src/components/CloseButton';
+import { Background } from 'src/components/Background';
+import {Tutors} from "src/components/Tutors";
+import {Route} from "src/components/Route";
 import anchor from 'src/constants/anchor';
 
 import footerJPG from 'src/assets/images/footer.jpg';
 import footerGIF from 'src/assets/images/footer.gif';
 
 import * as styles from './Applications.scss';
-import { Background } from 'src/components/Background';
-import {Tutors} from "src/components/Tutors";
 
 const cx = cn.bind(styles);
 
@@ -68,6 +69,7 @@ class Application extends Component {
                         <About />
                         <Enrollee />
                         <Tutors/>
+                        <Route/>
                         <Footer />
                     </>
                 );

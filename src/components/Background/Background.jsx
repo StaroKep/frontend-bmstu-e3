@@ -31,7 +31,7 @@ class Background extends Component {
 
     render() {
         const { loading } = this.state;
-        const { gif, jpg, position } = this.props;
+        const { gif, jpg, position, blackout = true } = this.props;
 
         const temporaryBackgroundStyles = {
             backgroundImage: `url(${jpg || headerJpg})`,
@@ -46,10 +46,19 @@ class Background extends Component {
         /** It's important to save order of div's */
         return (
             <>
-                {!loading && <div className={cx('root')} style={styles} />}
+                {!loading && (
+                    <div
+                        className={cx('root', blackout && 'root_blackout')}
+                        style={styles}
+                    />
+                )}
                 {loading && (
                     <div
-                        className={cx('root', 'root_temp')}
+                        className={cx(
+                            'root',
+                            'root_temp',
+                            blackout && 'root_blackout'
+                        )}
                         style={temporaryBackgroundStyles}
                     />
                 )}

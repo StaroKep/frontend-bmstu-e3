@@ -5,4 +5,5 @@ export default {
     schedule: "schedule",
     news: "news",
     tutors: "tutors",
+    route: "route",
 }

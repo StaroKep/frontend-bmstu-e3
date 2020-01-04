@@ -6,6 +6,7 @@ import anchor from 'src/constants/anchor';
 import { Title } from 'src/components/Title';
 import { Tutor } from './parts/Tutor';
 import { tutors } from './data';
+import {Presentation} from "src/components/Enrollee/parts/Presentation";
 
 import * as styles from './Tutors.scss';
 
@@ -20,6 +21,7 @@ class Tutors extends Component {
                 <Anchor name={anchor.tutors} />
                 <Title>Преподаватели</Title>
                 <div className={cx('tutors-list')}>{list}</div>
+                <Presentation videoURL="I1bsDYmpXXI" />
             </div>
         );
     }

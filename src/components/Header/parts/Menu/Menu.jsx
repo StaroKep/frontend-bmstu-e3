@@ -70,6 +70,10 @@ class Menu extends Component {
                     >
                         Факультет
                     </a>
+
+                    <a className={linkClassName} href={`#${anchor.route}`}>
+                        Как добраться
+                    </a>
                 </div>
             </div>
         );
