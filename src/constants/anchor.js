@@ -6,4 +6,5 @@ export default {
     news: "news",
     tutors: "tutors",
     route: "route",
+    more: "more",
 }

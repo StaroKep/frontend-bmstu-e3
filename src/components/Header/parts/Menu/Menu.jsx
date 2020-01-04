@@ -71,8 +71,8 @@ class Menu extends Component {
                         Факультет
                     </a>
 
-                    <a className={linkClassName} href={`#${anchor.route}`}>
-                        Как добраться
+                    <a className={linkClassName} href={`#${anchor.more}`}>
+                        Еще
                     </a>
                 </div>
             </div>

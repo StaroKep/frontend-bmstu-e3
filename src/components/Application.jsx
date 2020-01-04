@@ -9,8 +9,9 @@ import { Schedule } from 'src/components/Schedule';
 import { Footer } from 'src/components/Footer';
 import { CloseButton } from 'src/components/CloseButton';
 import { Background } from 'src/components/Background';
-import {Tutors} from "src/components/Tutors";
-import {Route} from "src/components/Route";
+import { Tutors } from 'src/components/Tutors';
+import { Route } from 'src/components/Route';
+import { More } from 'src/components/More';
 import anchor from 'src/constants/anchor';
 
 import footerJPG from 'src/assets/images/footer.jpg';
@@ -66,10 +67,11 @@ class Application extends Component {
                 content = (
                     <>
                         <Header />
+                        <More />
                         <About />
                         <Enrollee />
-                        <Tutors/>
-                        <Route/>
+                        <Tutors />
+                        <Route />
                         <Footer />
                     </>
                 );

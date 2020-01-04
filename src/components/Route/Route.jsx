@@ -37,9 +37,6 @@ class Route extends Component {
                 <Anchor name={anchor.route} />
                 <Title>Как добраться?</Title>
                 <div className={cx('content')}>
-                    <Title type="h3">
-                        Главный корпус МГТУ им. Н. Э. Баумана
-                    </Title>
                     <div className={cx('map')}>
                         <a
                             href="https://yandex.ru/maps/-/CBQFZXbigA"
@@ -48,7 +45,10 @@ class Route extends Component {
                             <Background {...bmstuBackgroundProps} />
                         </a>
                     </div>
-                    <table>
+                    <Title type="h3">
+                        Главный корпус МГТУ им. Н. Э. Баумана
+                    </Title>
+                    <table className={cx('table')}>
                         <tbody>
                             <tr>
                                 <td>Метро:</td>
@@ -75,9 +75,6 @@ class Route extends Component {
                         </tbody>
                     </table>
 
-                    <Title type="h3">
-                        Учебно-лабораторный корпус МГТУ им. Н. Э. Баумана
-                    </Title>
                     <div className={cx('map')}>
                         <a
                             href="https://yandex.ru/maps/-/CBQFZXtSWB"
@@ -86,7 +83,10 @@ class Route extends Component {
                             <Background {...ulkBackgroundProps} />
                         </a>
                     </div>
-                    <table>
+                    <Title type="h3">
+                        Учебно-лабораторный корпус МГТУ им. Н. Э. Баумана
+                    </Title>
+                    <table className={cx('table')}>
                         <tbody>
                             <tr>
                                 <td>Метро:</td>
