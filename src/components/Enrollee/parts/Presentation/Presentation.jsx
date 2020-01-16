@@ -54,12 +54,12 @@ class Presentation extends Component {
                 <a
                     className={cx('watchLink')}
                     target="_blank"
-                    href={`https://www.youtube.com/embed/${resultVideoURL}`}
+                    href={`https://www.youtube.com/embed/${resultVideoURL}?autoplay=1&loop=1&playlist=${resultVideoURL}`}
                 />
                 <iframe
                     style={iframeStyles}
                     className={cx('iframe')}
-                    src={`https://www.youtube.com/embed/${resultVideoURL}?controls=0&autoplay=1&loop=1&mute=1&playlist=${resultVideoURL}`}
+                    src={`https://www.youtube.com/embed/${resultVideoURL}`}
                     frameBorder="0"
                     allow="accelerometer; autoplay; loop; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

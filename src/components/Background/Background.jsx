@@ -17,7 +17,7 @@ class Background extends Component {
         };
     }
 
-    componentWillMount() {
+    componentDidMount() {
         const { gif } = this.props;
 
         const draftGif = new Image();
